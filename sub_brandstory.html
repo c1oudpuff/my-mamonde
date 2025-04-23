@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마몽드 - 브랜드 스토리</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7e0f648cb4.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/storyStyle.css" />
+    <link rel="stylesheet" href="js/fullPage/jquery.fullPage.css" type="text/css/">
+    <script type="text/javascript" src="js/fullPage/jquery.fullPage.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1 id="logo">
+            <a href="index.html" class="animate__animated animate__fadeInDown">로고</a>
+        </h1>
+        <p id="login">
+            <span class="disabled"><span>검색</span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span class="disabled">매장찾기</span>
+            <span class="disabled">로그인</span>
+        </p>
+        <nav id="gnb">
+            <ul>
+                <li>
+                    <a class="mainmenu" href="">OUR STORY</a>
+                    <div class="submenu">
+                        <div class="subsub">
+                            <p class="subtitle">MAMONDE</p>
+                            <ul>
+                                <li><a href="sub_brandstory.html">브랜드 스토리</a></li>
+                                <li><a href="sub_lounge.html">라운지</a></li>
+                            </ul>
+                        </div>
+                        <div class="subsub">
+                            <a href="sub_brandstory.html"><img src="../img/banner.jpg" alt="" /></a>
+                            <p id="banner">
+                                <a href="sub_brandstory.html">HYPER FLORA™으로 피어나는 나다운 아름다움</a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="mainmenu" href="sub_best.html">BEST&NEW</a></li>
+                <li>
+                    <a class="mainmenu" href="sub_product1.html">PRODUCT</a>
+                    <div class="submenu">
+                        <div class="subsub">
+                            <p class="subtitle">제품 유형별</p>
+                            <ul>
+                                <li><a href="sub_product1.html">스킨/로션</a></li>
+                                <li><a href="sub_product2.html">에센스/앰플/세럼</a></li>
+                                <li><a href="sub_product3.html">크림</a></li>
+                                <li><a href="sub_product4.html">마스크</a></li>
+                                <li><a href="sub_product5.html">클렌징</a></li>
+                            </ul>
+                        </div>
+                        <div class="subsub">
+                            <a href="sub_product4.html"><img src="img/banner2.jpg" alt="" /></a>
+                            <p id="banner">
+                                <a href="sub_product4.html">더 강력해진 화잘먹 치트키를 만나보세요!</a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <input type="checkbox" id="menu_check" />
+        <label for="menu_check" id="menu_label" class="material-symbols-outlined">
+            menu
+        </label>
+        <nav id="mobileGnb">
+            <label for="menu_check" id="close_label" class="material-symbols-outlined">
+                close
+            </label>
+            <ul>
+                <li><a href="index.html">MAMONDE</a></li>
+                <li>
+                    <a href="sub_brandstory.html">OUR STORY</a>
+                    <input type="checkbox" id="sub_check" />
+                    <label for="sub_check" id="sub_label" class="material-symbols-outlined">
+                        add
+                    </label>
+                    <ul class="mobile_submenu">
+                        <label for="sub_check" id="close_label" class="material-symbols-outlined">
+                            remove
+                        </label>
+                        <li><a href="sub_brandstory.html">브랜드 스토리</a></li>
+                        <li><a href="sub_lounge.html">라운지</a></li>
+                        <li>
+                            <img src="img/banner.jpg" alt="" />
+                            <p>HYPER FLORA™으로 피어나는 나다운 아름다움</p>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="sub_best.html">BEST&NEW</a></li>
+                <li>
+                    <a href="sub_product1.html">PRODUCT</a>
+                    <input type="checkbox" id="sub2_check" />
+                    <label for="sub2_check" id="sub2_label" class="material-symbols-outlined">
+                        add
+                    </label>
+                    <ul class="mobile_submenu">
+                        <label for="sub2_check" id="close_label" class="material-symbols-outlined">
+                            remove
+                        </label>
+                        <li><a href="sub_product1.html">스킨/로션</a></li>
+                        <li><a href="sub_product2.html">에센스/앰플/세럼</a></li>
+                        <li><a href="sub_product3.html">크림</a></li>
+                        <li><a href="sub_product4.html">마스크</a></li>
+                        <li><a href="sub_product5.html">클렌징</a></li>
+                        <li>
+                            <img src="img/banner2.jpg" alt="" />
+                            <p>더 강력해진 화잘먹 치트키를 만나보세요!</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="sns">
+                <a href="https://www.facebook.com/mamonde.kr/"><span>페이스북</span><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/mamondekorea/"><span>인스타그램</span><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/user/mamonderepair"><span>유튜브</span><i
+                        class="fa-brands fa-youtube"></i></a>
+                <br />
+            </div>
+        </nav>
+        <section id="fullpage">
+            <div class="section" id="section1">
+                <div class="text_container">
+                    <h1 class="animate__animated animate__fadeInUp">Powered by Hyper Flora</h1>
+                    <h3 class="animate__animated animate__fadeInUp">하이퍼 플로라로 피어나는 나다운 아름다움</h3>
+                </div>
+            </div>
+            <div class="section" id="section2">
+                <div>
+                    <h1 class="animate__animated animate__fadeInUp">HYPER FLORA</h1>
+                    <h2 class="animate__animated animate__fadeInUp">하이퍼 플로라</h2>
+                    <h3 class="animate__animated animate__fadeInUp">
+                        꽃에서 찾은 효능 성분과 최신의 스킨케어 성분을<br>
+                        결합하여 피부 시너지를 생성하는<br>
+                        마몽드의 스킨케어 솔루션
+                    </h3>
+                    <span><img src="img/브랜드스토리/브랜드스토리_아이콘.png" alt=""></span>
+                </div>
+                <div>
+                    <video src="img/브랜드스토리/브랜드스토리_2.mp4" controls data-autoplay muted></video>
+                </div>
+            </div>
+            <div class="section" id="section3">
+                <p class="animate__animated animate__fadeInUp">
+                    자신만의 독특한 방식으로<br>
+                    삶을 꽃 피울 수 있도록
+                </p>
+                <p class="animate__animated animate__fadeInUp">
+                    마몽드는 아름다움의 경계를 깨고 모두가<br>
+                    자신만의 독특한 방식으로 삶을 꽃 피울 수 있도록 합니다.
+                </p>
+            </div>
+            <div class="section" id="section4">
+                <div>
+                    <h1 class="animate__animated animate__fadeInUp">HYPER FLORA</h1>
+                    <h3 class="animate__animated animate__fadeInUp">
+                        1991년의 브랜드 헤리티지를 이어받아,<br>
+                        경계를 넘나드는 유기적인 형태의 M에 꽃을 더해<br>
+                        마몽드만의 자유롭고 당당한 아름다움을 표현합니다.
+                    </h3>
+                    <span><img src="img/브랜드스토리/브랜드스토리_아이콘2.png" alt=""></span>
+                </div>
+                <div>
+                    <video src="img/브랜드스토리/브랜드스토리_4.mp4" controls data-autoplay muted></video>
+                </div>
+            </div>
+            <div id="footer" class="section">
+                <div class="sns">
+                    <a href="https://www.facebook.com/mamonde.kr/"><span>페이스북</span><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/mamondekorea/"><span>인스타그램</span><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/user/mamonderepair"><span>유튜브</span><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <br />
+                </div>
+                <div class="desktop">
+                    <ul>
+                        <li>회사소개</li>
+                        <li>서비스이용약관</li>
+                        <li>개인정보처리방침</li>
+                        <li>영상정보처리방침</li>
+                        <li>뷰티포인트</li>
+                    </ul>
+                    <br>
+                    <p>고객서비스센터(수신자요금부담) 080-023-5454 (월~금 : AM 09:00 ~ PM 06:00)</p>
+                    <p>© AMOREPACIFIC CORPORATION. All rights reserved.</p>
+                    <img src="img/footer_mark.png" alt="">
+                </div>
+                <div class="smartphone">
+                    <p>© AMOREPACIFIC CORPORATION. All rights reserved.<span class="material-symbols-outlined">
+                            keyboard_arrow_down
+                        </span></p>
+                    <div class="hidden_text">
+                        <ul>
+                            <li>회사소개</li>
+                            <li>서비스이용약관</li>
+                            <li>개인정보처리방침</li>
+                            <li>영상정보처리방침</li>
+                            <li>뷰티포인트</li>
+                        </ul>
+                        <br>
+                        <p>고객서비스센터(수신자요금부담) 080-023-5454 (월~금 : AM 09:00 ~ PM 06:00)</p>
+                        <img src="img/footer_mark.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+    <script>
+        $(document).ready(function () {
+            const toggleBtn = $('i.fa-chevron-down');
+            const smartphone = $('.smartphone');
+
+            smartphone.hide();
+
+            toggleBtn.on('click', function () {
+                smartphone.toggle();
+                $(this).toggleClass('rotated');
+            });
+
+            window.addEventListener("scroll", function () {
+                const mobileMenu = document.querySelector("nav#mobileGnb");
+                const scrollPosition = window.scrollY; // 현재 스크롤 위치
+                mobileMenu.style.top = `${scrollPosition}px`; // 스크롤 위치에 맞게 메뉴 위치 조정
+            });
+
+            $("#fullpage").fullpage({
+                autoScrolling: true,
+                afterLoad: function (anchorLink, index) {
+                    const $logo = $('#wrapper>h1#logo');
+                    const $gnb = $('nav#gnb');
+
+                    if (index === 1) {
+                        // 첫 번째 섹션에서만 로고와 메뉴 표시
+                        $logo.removeClass('hidden');
+                        $gnb.removeClass('hidden');
+                    } else {
+                        // 다른 섹션에서는 로고와 메뉴 숨김
+                        $logo.addClass('hidden');
+                        $gnb.addClass('hidden');
+                    }
+                }
+            })
+
+            $(".material-symbols-outlined").on("click", function () {
+                $(".hidden_text").slideToggle(300); // 텍스트 슬라이드 표시/숨김
+                $(this).toggleClass("rotate"); // 아이콘 회전
+            });
+        })
+    </script>
+</body>
+
+</html>
